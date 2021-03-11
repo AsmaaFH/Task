@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url('../images/Group1159.png');
+    background-repeat: no-repeat;
+}
+.navbar{
+    padding: 1% 5%;
+}
+
+.navbar button{
+    background-color: #1c85c8;
+    padding: 1px 1.5rem;
+    margin-top: 5px;
+    margin-left: 0.5rem;
+    color: white;
+    box-shadow: 0 0 5px #1c85c8;
+}
+.navbar-toggler{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: blue !important;
+}
+.form {
+    display: flex;
+    margin: 10% auto;
+    width: 60%;
+    margin-bottom: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;}
+.form input{
+    border: none;
+    padding: 20px !important;
+    border-right: 1px solid #283C8C;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.form select{
+    opacity: 0.6;
+    font-size: 14px;
+    width: 70%;
+    border: none;
+    padding: 25px !important;
+}
+.form .form-heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form .form-control:focus {
+    z-index: 2;
+}
+
+.form button{
+    background-color: #1c85c8;
+    padding: 1px 1.5rem;
+    color: white;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    border: none;
+}
+
+.main-section{
+    margin:3% auto;
+}
+.main-section>div{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 10px;
+    margin: 0 1%;
+    padding: 1%;
+}
+.main-section .col-lg-4{
+    padding: 18px;
+}
+.main-section .sidebar>div{
+    margin-bottom: 6%;
+}
+.main-section .sidebar h6{
+    opacity: 0.8;
+    font-weight: 600;
+}
+.main-section select{
+  flex: 1;
+  padding: 0 .5em;
+  color: #000;
+  opacity: 0.5;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #00000029;
+
+}
+.main-section .selected{
+    margin: 10px 0;
+}
+.main-section .selected span{
+    color: #828282;
+    font: normal normal normal 14px/12px Roboto;
+    background-color: #F3F6FF;
+    padding: 2px 5px;
+}
+.main-section .selected span::after{
+    content: url('../images/material-close/Icon\ material-close.png');
+    margin: 3px 3px;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+.main-section .sidebar input[type=radio]{
+    height: 16px;
+    width: 16px;
+}
+.main-section input[type = radio]{
+    margin: 0 5px;
+}
+input[type = radio] ~ span {
+    opacity: 0.6;
+    font-size: 15px;
+}
+.main-section .sidebar .filter{
+    background-color: #1c85c8;
+    padding: 1px 1.5rem;
+    margin-top: 5px;
+    margin-left: 0.5rem;
+    color: white;
+    box-shadow: 0 0 2px #1c85c8;
+}
+.main-section div{
+    background-color: white;
+}
+.newsfeed {
+    background-color: white;
+    border-radius: 10px;
+}
+.newsfeed .block{
+    display: flex;
+    position: relative;
+    padding: 20px;
+    border-bottom: 2px #eee solid;
+}
+.newsfeed .img{
+    width: 80px;
+    height: 80px;
+    margin: 0 18px 0 0px;
+    box-shadow: 0px 0px 10px #00000029;
+
+}
+.newsfeed .img img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.newsfeed .block h6{
+    font-weight: bold;
+    font-size: 15px;
+}
+.newsfeed .block p{
+    opacity: 0.6;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+.newsfeed .info .tuition-fee{
+    opacity: 0.4;
+    font-size: 13px;
+}
+.newsfeed .info .price{
+    color: #283C8C;
+    font-size: 15px;
+    margin: 0 1%;
+}
+.newsfeed .info .city{
+    font-size: 15px;
+    color: #283C8C;
+    margin: 0 12%;
+    display: contents;
+}
+
+.newsfeed .block button{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #1c85c8;
+    padding: 1px 1rem;
+    margin-top: 5px;
+    margin-left: 0.5rem;
+    color: white;
+    box-shadow: 0 0 5px #1c85c8;
+}
+
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    a.active{
+        color: #1C85C8 !important;
+    }
+    .search{
+        width: 60%;
+    }
+    .search input{
+        width: 43%;
+        border-right: 1px solid #283C8C;
+    }
+    .search select{
+        width: 43%;
+    }
+    .main-section{
+        width: 85%;
+        margin:3% auto;
+    }
+}
+
+@media (max-width: 1200px){
+    .main-section{
+        width: 100%;
+    }
+}
+@media(max-width: 992px){
+    body{
+        background-image: none;
+    }
+    .form{
+        width: 80%;
+    }
+    .main-section{
+        width: 80%;
+    }
+    .main-section .col-lg-7{
+        margin-top: 4%;
+    }
+    .main-section .sidebar .radio-btns{
+        display: flex;
+    }
+    .main-section .sidebar .radio-btns>div{
+        margin: 0 2%;
+    }
+}
+
+@media(max-width: 770px){
+    .form{
+        width: 90%;
+    }
+    .main-section{
+        width: 90%;
+    }
+}
+@media(max-width: 670px){
+    .form{
+        width: 100%;
+        display: block;
+        margin-top: 5%;
+        padding: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .form select{
+        width: 100%;
+        height: 50px;
+
+    }
+    .form input{
+        border: none;
+        border-bottom: 1px #1c85c8 solid;
+    }
+    .form button{
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+        border: none;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .main-section{
+        width: 100%;
+    }
+}
+@media(max-width: 570px){
+    .form{
+        margin-top: 20%;
+    }
+    .newsfeed .img{
+        display: none;
+    }
+    .newsfeed .block{
+        display: block;
+    }
+    .newsfeed .block button{
+        position: static;
+        margin: 10px 0 0 0;
+        box-shadow: 0 0 1px #1c85c8;
+    }
+    .newsfeed .info .city{
+        display: block;
+        margin: 0;
+    }
+}
+@media(max-width: 470px){
+    
+}
+
