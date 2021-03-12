@@ -36,10 +36,10 @@
 
     <!--Search Section-->
     <div class="form">
-      <input type="text" class="form-control" placeholder="What do you want to learn?">
-      <select class="form-control city-select">
+      <input type="text" class="form-control" placeholder="What do you want to learn?" id="search-text">
+      <select class="form-control city-select" id="citySelectFilter">
           <option selected="selected">Select One City or more</option>
-          
+          <option value="0">All</option>
       </select>
       <button>Search</button>
   </div>
@@ -55,7 +55,7 @@
         <div class="sidebar">
           <div class="city">
             <h6 class="my-2" style="opacity: 0.8;">City</h6>
-            <select class="custom-select city-select">
+            <select class="custom-select city-select" id="city-select-sidebar">
               <option selected>Choose one city or more</option>
               
             </select>
