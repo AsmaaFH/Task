@@ -37,10 +37,12 @@
     <!--Search Section-->
     <div class="form">
       <input type="text" class="form-control" placeholder="What do you want to learn?" id="search-text">
-      <select class="form-control city-select" id="citySelectFilter">
-          <option selected="selected">Select One City or more</option>
-          <option value="0">All</option>
-      </select>
+      <div class="select">
+        <select class="form-control city-select" id="citySelectFilter">
+            <option selected="selected">Select One City or more</option>
+            <option value="0">All</option>
+        </select>
+      </div>
       <button>Search</button>
   </div>
 
@@ -68,22 +70,16 @@
 
           <div class="program">
             <h6>Program</h6>
-            <div class="radio-btns">
-              <div><input type="radio" checked="checked"><span>Bachleor</span></div>
-              <div><input type="radio"><span>Master</span></div>
-              <div><input type="radio"><span>MBA</span></div>
-              <div><input type="radio"><span>BHD</span></div>
+            <div class="radio-btns level-radio">
+              
             </div>
           </div>
 
           <!--Field Section-->
           <div class="field">
             <h6>Field</h6>
-            <select class="custom-select">
+            <select class="custom-select field-select">
               <option selected>Choose one Field or more</option>
-              <option></option>
-              <option></option>
-              <option></option>
             </select>
             <div class="selected">
               <span>sel1</span>
@@ -97,11 +93,8 @@
           <!--School Section-->
           <div class="school">
             <h6>School</h6>
-            <select class="custom-select">
+            <select class="custom-select school-select">
               <option selected>Choose one School or more</option>
-              <option></option>
-              <option></option>
-              <option></option>
             </select>
             <div class="selected">
               <span>sel1</span>
@@ -115,21 +108,21 @@
           <div class="language">
             <h6>Language</h6>
             <div class="radio-btns">
-              <div><input type="radio" checked="checked"><span>All</span></div>
-              <div><input type="radio"><span>English</span></div>
-              <div><input type="radio"><span>French</span></div>
+              <div><input type="radio" checked="checked" name="language-radio" value="all"><span>All</span></div>
+              <div><input type="radio" name="language-radio" value="English"><span>English</span></div>
+              <div><input type="radio" name="language-radio" value="French"><span>French</span></div>
             </div>
           </div>
 
           <div class="sort">
             <h6>Sort</h6>
             <div class="radio-btns">
-              <div><input type="radio" checked="checked"><span>Price: low to high</span></div>
-              <div><input type="radio"><span>price: high to low</span></div>
+              <div><input type="radio" checked="checked" name="price-radio" value="low"><span>Price: low to high</span></div>
+              <div><input type="radio" name="price-radio" value="high"><span>price: high to low</span></div>
             </div>
           </div>
 
-          <button class="filter btn">Filter</button>
+          <button class="filter btn" id="filter-btn">Filter</button>
         </div>
         <!--End Sidebar-->
       </div>
